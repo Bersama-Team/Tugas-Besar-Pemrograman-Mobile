@@ -27,6 +27,9 @@ class DetailTugasActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListe
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.detail_tugas)
+
+        supportActionBar!!.setDefaultDisplayHomeAsUpEnabled(true)
+
         pickDate()
         pickTime()
     }
