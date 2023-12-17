@@ -22,7 +22,7 @@
 
     <Button
         android:id="@+id/btn_datePicker"
-        android:layout_width="0dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Pilih Tanggal"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +37,7 @@
 
     <Button
         android:id="@+id/btn_timePicker"
-        android:layout_width="0dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Pilih Jam"
         app:layout_constraintStart_toEndOf="@+id/btn_datePicker"
