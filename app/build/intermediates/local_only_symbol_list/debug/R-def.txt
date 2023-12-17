@@ -1,0 +1,29 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable baseline_arrow_circle_left_24
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id btn_back
+id btn_datePicker
+id btn_detail
+id btn_timePicker
+id img_back
+id textTenggat
+id titleAddTask
+id titleDetailTask
+layout activity_main
+layout add_tugas
+layout detail_tugas
+layout list_tugas
+menu action_bar
+mipmap ic_launcher
+mipmap ic_launcher_round
+string add_task
+string app_name
+string back
+style Base.Theme.TugasBesarPemrogramanMobile
+style Theme.TugasBesarPemrogramanMobile
+xml backup_rules
+xml data_extraction_rules

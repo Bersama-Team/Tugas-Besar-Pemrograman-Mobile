@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="add_task">Tambahkan Tugas</string>
+    <string name="app_name">Tugas Besar Pemrograman Mobile</string>
+    <string name="back">Kembali</string>
+    <style name="Base.Theme.TugasBesarPemrogramanMobile" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.TugasBesarPemrogramanMobile" parent="Base.Theme.TugasBesarPemrogramanMobile"/>
+</resources>
