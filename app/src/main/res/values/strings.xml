@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Tugas Besar Pemrograman Mobile</string>
-    <string name="add_task">Tambahkan Tugas</string>
-
-    <string name="back">Kembali</string>
+    <string name="AddTask">Tambahkan Tugas</string>
+    <string name="DetailTask">Detail Tugas</string>
+    <string name="btn_back">Kembali</string>
 </resources>

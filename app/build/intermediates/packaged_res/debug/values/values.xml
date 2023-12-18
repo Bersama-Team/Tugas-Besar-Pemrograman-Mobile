@@ -2,9 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <string name="add_task">Tambahkan Tugas</string>
+    <string name="AddTask">Tambahkan Tugas</string>
+    <string name="DetailTask">Detail Tugas</string>
     <string name="app_name">Tugas Besar Pemrograman Mobile</string>
-    <string name="back">Kembali</string>
+    <string name="btn_back">Kembali</string>
     <style name="Base.Theme.TugasBesarPemrogramanMobile" parent="Theme.Material3.DayNight.NoActionBar">
         
         
