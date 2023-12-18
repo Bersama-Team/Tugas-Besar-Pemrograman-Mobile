@@ -33,10 +33,6 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    //        ditambah erli
-    buildFeatures {
-        viewBinding = true
-    }
 }
 
 dependencies {
