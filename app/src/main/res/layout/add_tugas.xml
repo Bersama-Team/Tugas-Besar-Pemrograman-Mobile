@@ -13,8 +13,8 @@
         android:text="Tambahkan Tugas"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintLeft_toRightOf="@id/img_back"
-        app:layout_constraintTop_toTopOf="parent"/>
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="23dp"/>
 
     <ImageView
         android:id="@+id/img_back"
@@ -23,7 +23,17 @@
         android:layout_margin="8dp"
         android:src="@drawable/baseline_arrow_circle_left_24"
         android:onClick="onBackButtonClicked"
-        app:layout_constraintRight_toLeftOf="@id/titleAddTask"
-        app:layout_constraintTop_toTopOf="parent"/>
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="10dp"/>
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

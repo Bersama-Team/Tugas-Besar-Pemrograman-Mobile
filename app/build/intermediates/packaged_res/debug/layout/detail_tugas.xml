@@ -12,31 +12,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="@string/DetailTask"
-        android:textSize="25sp"
+        android:text="Detail Tugas"
+        android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintLeft_toRightOf="@id/btn_back"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="19dp" />
 
     <ImageView
         android:id="@+id/btn_back"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_margin="8dp"
-        android:layout_marginStart="4640dp"
         android:src="@drawable/baseline_arrow_circle_left_24"
-        app:layout_constraintRight_toLeftOf="@id/titleDetailTask"
-        app:layout_constraintTop_toTopOf="parent"/>
-<!--    <Button-->
-<!--        android:id="@+id/btn_back"-->
-<!--        android:layout_width="70dp"-->
-<!--        android:layout_height="70dp"-->
-<!--        android:layout_margin="8dp"-->
-<!--        android:layout_marginStart="4640dp"-->
-<!--        android:src="@drawable/baseline_arrow_circle_left_24"-->
-<!--        app:layout_constraintRight_toLeftOf="@id/titleDetailTask"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        />-->
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="10dp" />
 
     <TextView
         android:id="@+id/textTenggat"
@@ -82,15 +71,8 @@
         android:backgroundTint="#FED049"
         />
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pengingat"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

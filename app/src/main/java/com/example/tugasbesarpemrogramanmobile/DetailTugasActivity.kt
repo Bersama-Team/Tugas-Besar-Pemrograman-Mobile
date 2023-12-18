@@ -1,18 +1,12 @@
 package com.example.tugasbesarpemrogramanmobile
 
-import android.app.ActionBar
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
-import android.content.ComponentCallbacks
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
-import android.view.Menu
 import android.widget.DatePicker
 import android.widget.TimePicker
 import android.widget.Button
-import android.widget.ImageView
 import android.widget.TextView
 import java.util.Calendar
 
@@ -34,17 +28,13 @@ class DetailTugasActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListe
         super.onCreate(savedInstanceState)
         setContentView(R.layout.detail_tugas)
 
+        supportActionBar!!.setDefaultDisplayHomeAsUpEnabled(true)
+
         pickDate()
         pickTime()
-
-        val btn_back = findViewById<ImageView>(R.id.btn_back)
-
-        btn_back.setOnClickListener {
-            finish()
-        }
     }
 
-    private fun getDateCalendar() {
+    private fun getDateCalendar(){
         val cal = Calendar.getInstance()
         day = cal.get(Calendar.DAY_OF_MONTH)
         month = cal.get(Calendar.MONTH)
@@ -58,13 +48,13 @@ class DetailTugasActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListe
         btn_datePicker.setOnClickListener {
             getDateCalendar()
 
-            DatePickerDialog(this, this, year, month, day).show()
+            DatePickerDialog(this,this,year,month,day).show()
         }
     }
 
     override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
         savedDay = dayOfMonth
-        savedMonth = month + 1
+        savedMonth = month +1
         savedYear = year
 
         getDateCalendar()
@@ -79,7 +69,6 @@ class DetailTugasActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListe
             TimePickerDialog(this, this, hour, minute, true).show()
         }
     }
-
     override fun onTimeSet(view: TimePicker?, hourOfDay: Int, minute: Int) {
         savedHour = hourOfDay
         savedMinute = minute
@@ -87,25 +76,4 @@ class DetailTugasActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListe
         btn_timePicker.text = " $savedHour : $savedMinute"
 
     }
-
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_main)
-//
-//        val btn_back = findViewById<Button>(R.id.btn_back)
-//        btn_back.setOnClickListener {
-//            startActivity(Intent(this@DetailTugasActivity, MainActivity::class.java))
-//        }
-//
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.detail_tugas)
-//
-//    val btn_back = findViewById<ImageView>(R.id.btn_back)
-//
-//    btn_back.setOnClickListener {
-//        finish()
-//    }
-//    }
-
 }
